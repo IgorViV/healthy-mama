@@ -3,34 +3,316 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Сайт о правильном и вкусном рационе для Вас и вашего ребенка">
+    <meta name="description" content="Доставка здорового питания для мам и будущих мам, составим для Вас персональное меню">
     <!-- To run web application in full-screen -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
     <!-- Has no effect unless you have the previous meta tag -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- Standard favicon -->
-    <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="https://example.com/favicon.ico"> -->
     <!-- Recommended favicon format -->
-    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+    <!-- <link rel="icon" type="image/png" href="https://example.com/favicon.png"> -->
     <!-- Apple Touch Icon (at least 200x200px) -->
-    <link rel="apple-touch-icon" href="/custom-icon.png">
+    <!-- <link rel="apple-touch-icon" href="/custom-icon.png"> -->
     <!-- <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font"> -->
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Здоровая мама</title>
+    <title>Здоровое питание для мам</title>
   </head>
   <body>
-    <header>
-      <h1>Здоровая мама</h1>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <div class="content-wrapper">
+      <header class="page-header" id="header">
+        <div class="page-header__wrapper">
+          <div class="page-header__wrapper-sandwich">
+            <a class="link logo page-header__logo">
+              Здоровая мама
+            </a>
+            <button class="page-header__sandwich-button" type="button">
+              Открыть меню
+              <span class="page-header__button-row"></span>
+            </button>
+          </div>
+          <nav class="page-header__navigation">
+            <ul class="menu page-header__menu">
+              <li class="menu__item">
+                <a href="#reasons" class="link menu__link">Важность правильного питания</a>
+              </li>
+              <li class="menu__item">
+                <a href="#advantages" class="link menu__link">Почему мы?</a>
+              </li>
+              <li class="menu__item">
+                <a href="#order-form" class="link menu__link">Где заказать?</a>
+              </li>
+            </ul>
+          </nav>
+        </div> 
+      </header>
+      <main class="main-content">
+        <section class="banner main-content__banner">
+          <div class="banner__wrapper">
+            <div class="banner__text">
+              <h1>
+                Доставка здорового питания для мам
+              </h1>
+              <p>
+                Правильный и вкусный рацион для Вас и вашего ребенка
+              </p>
+              <a class="link button banner__button" href="#order-form">Оформить заказ</a>
+            </div>
+            <div class="banner__wrapper-slider">
+              <ul class="radio-slider banner__radio-slider">
+                <li class="radio-slider__item radio-slider__item--pregnant">
+                  <input type="radio" name="option" id="pregnant" checked>
+                  <label for="pregnant">
+                    <span>
+                      Для беременных
+                    </span>
+                  </label>
+                  <div class="radio-slider__wrapper-image">
+                    Беременная молодая девушка
+                  </div>
+                </li>
+                <li class="radio-slider__item radio-slider__item--nursing">
+                  <input type="radio" name="option" id="nursing">
+                  <label for="nursing">
+                    <span>
+                      Для беременных
+                    </span>
+                  </label>
+                  <div class="radio-slider__wrapper-image">
+                    Молодая девушка держит около груди младенца
+                  </div>
+                </li>
+                <li class="radio-slider__item radio-slider__item--medicament">
+                  <input type="radio" name="option" id="medicament">
+                  <label for="medicament">
+                    <span>
+                      Безопасные лекарства
+                    </span>
+                  </label>
+                  <div class="radio-slider__wrapper-image">
+                    Девушка стоит вполоборота и кусает зеленое яблоко
+                  </div>
+                </li>
+              </ul>
+              <div class="banner__wrappeer-controls">
+                <button class="slider-button slider-button--prev banner__slider-button banner__slider-button--prev" type="button">
+                  Предыдущий слайд
+                </button>
+                <button class="slider-button slider-button--next banner__slider-button banner__slider-button--next" type="button">
+                  Следующий слайд
+                </button>
+              </div>
+            </div>
+          </div> 
+        </section>
+        <section class="reasons main-content__reasons" id="reasons">
+          <div class="reasons__wrapper-content">
+            <h2 class="reasons__title">
+              Почему Вам нужно правильно питаться?
+            </h2>
+            <ul class="reasons__list">
+              <li class="reasons__item">
+                Здоровый ребенок    
+              </li>
+              <li class="reasons__item">
+                Повышенный иммунетет
+              </li>
+              <li class="reasons__item">
+                Поддержание фигуры
+              </li>
+              <li class="reasons__item">
+                Отсутствие вредных компонентов
+              </li>
+              <li class="reasons__item">
+                Снижение нагрузки на органы пищеварения
+              </li>
+            </ul>
+            <figure class="reasons__author">
+              <img src="#" alt="Фото" class="reasons__author-photo">
+              <figcaption class="reasons__author-name">
+                Иванова Надежда Александровна
+                <span>
+                  Сертифицированный диетолог
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <section class="products main-content__products" id="products">
+          <h2 class="products__title">
+            Обязательные продукты для здорового питания
+          </h2>
+          <ul class="products__list">
+            <li class="products__item">
+              <img src="#" alt="Овощи" class="products__image">
+              <div class="products__description">
+                <h3>
+                  Овощи
+                </h3>
+                <p>
+                  Брокколи, тыква, цветная капуста, репка, огурцы. Готовьте блюда из тушеных смесей без добавления масла.
+                </p>
+              </div>
+            </li>
+            <li class="products__item">
+              <img src="#" alt="Овощи" class="products__image">
+              <div class="products__description">
+                <h3>
+                  Мясо
+                </h3>
+                <p>
+                  Крольчатина, телятина, индейка, курица без кожи. Мясные блюда ежедневно должны присутствовать в питании в тушеном, запеченном или вареном виде.
+                </p>
+              </div>
+            </li>
+            <li class="products__item">
+              <img src="#" alt="Овощи" class="products__image">
+              <div class="products__description">
+                <h3>
+                  Продукты из молока
+                </h3>
+                <p>
+                  Сыр, ряженка, простокваша, творог, йогурт без добавок, кефир. Желательно кушать их кормящей маме ежедневно либо через день.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="products__wrapper-controls">
+            <button class="slider-button slider-button--prev products__slider-button products__slider-button--prev" type="button" tabindex="0" role="button" aria-label="Previous slide">
+              Предыдущий слайд
+            </button>
+            <button class="slider-button slider-button--next products__slider-button products__slider-button--next"
+              type="button" tabindex="0" role="button" aria-label="Next slide">Следующий
+              слайд</button>
+          </div>  
+        </section>
+        <section class="advantages main-content__advantages" id="advantages">
+          <div class="advantages__wrapper-content">
+            <h2 class="advantages__title">
+              Почему мамы&nbsp;выбирают нашу доставку?
+            </h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--ecological">
+                <h3 class="advantages__item-title">
+                  Экологичность:
+                </h3>
+                <p class="advantages__item-text">
+                  продукты выращиваются без применения химии
+                </p>
+                <span class="advantages__item-icon advantages__item-icon--ecological">
+    
+                </span>
+              </li>
+              <li class="advantages__item advantages__item--balance">
+                <h3 class="advantages__item-title">
+                  Сбалансированность:
+                </h3>
+                <p class="advantages__item-text">
+                  наши блюда составляют ведущие диетологи по уникальной рецептуре
+                </p>
+                <span class="advantages__item-icon advantages__item-icon--balance">
+    
+                </span>
+              </li>
+              <li class="advantages__item advantages__item--individuality">
+                <h3 class="advantages__item-title">
+                  Индивидуальность:
+                </h3>
+                <p class="advantages__item-text">
+                  для вашего выбора мы предоставляем большое кол-во вариантов блюд
+                </p>
+                <span class="advantages__item-icon advantages__item-icon--individuality">
+    
+                </span>
+              </li>
+              <li class="advantages__item advantages__item--profit">
+                <h3 class="advantages__item-title">
+                  Польза:
+                </h3>
+                <p class="advantages__item-text">
+                  питаясь нашими продуктами, Вы можете быть уверены в своем здоровье и здоровье ребенка
+                </p>
+                <span class="advantages__item-icon advantages__item-icon--profit">
+    
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="instagram main-content__instagram">
+          <h2 class="instagram__title">
+            Наш Instagram
+          </h2>
+          <p class="instagram__text">
+            <a class="link instagram__link" href="#">
+              Подписывайтесь
+            </a>
+            <span>
+              , чтобы быть в курсе последних новостей
+            </span>
+          </p>
+          <div class="instagram__collage">
+  
+          </div>
+        </section>
+        <section class="order-form" id="order-form">
+          <h2 class="order-form__title">
+            Хотите получить персональное меню?
+          </h2>
+          <p class="order-form__text">
+            Оставьте заявку и наш оператор свяжется с Вами для уточнения деталей
+          </p>
+          <form class="order-form__form" action="#" method="post">
+            <div class="order-form__group">
+              <label class="visually-hidden" for="user-name">Представтесь</label>
+              <input id="user-name" type="text" name="user-name" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required="" placeholder="Ваше имя">
+            </div>
+            <div class="order-form__group">
+              <label class="visually-hidden" for="user-phone">Укажите Ваш номер телефона</label>
+              <input id="user-phone" type="tel" name="user-phone" pattern="\+7\s\([0-9]{3}\)\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="on" required="" placeholder="Ваш телефон">
+            </div>
+            <button class="button order-form__button" type="submit">
+              Оформить заказ
+            </button>
+          </form>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo" href="#header">
+            Здоровая мама
+          </a>  
+          <ul class="menu page-footer__menu">
+            <li class="menu__item">
+              <a href="#reasons" class="link menu__link">Важность правильного питания</a>
+            </li>
+            <li class="menu__item">
+              <a href="#advantages" class="link menu__link">Почему мы?</a>
+            </li>
+            <li class="menu__item">
+              <a href="#order-form" class="link menu__link">Где заказать?</a>
+            </li>
+          </ul>
+          <div class="page-footer__politics">
+            <ul class="page-footer__politics-list">
+              <li class="page-footer__politics-item">
+                <a class="link page-footer__politics-link" href="#">
+                  Политика конфиденциальности
+                </a>
+              </li>
+              <li class="page-footer__politics-item">
+                <a class="link page-footer__politics-link" href="#">
+                  Условия онлайн-успользования
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
