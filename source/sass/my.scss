@@ -71,6 +71,11 @@ font-size: 16px;
 font-family: "Lato", "Arial", sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 // MEDIA
 @media (min-width: 576px) {
 
