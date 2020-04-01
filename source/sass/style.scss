@@ -1,11 +1,12 @@
 // раздел для подключения своих SCSS файлов
-@import "normalize";
-@import "visually-hidden";
-@import "my";
-@import "blocks/content-wrapper";
-@import "blocks/page-header";
-@import "blocks/logo";
-@import "blocks/same-list";
-@import "blocks/link";
-@import "blocks/page-footer"
+@import "normalize.scss";
+@import "variables.scss";
+@import "visually-hidden.scss";
+@import "general.scss";
+@import "blocks/content-wrapper.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/same-list.scss";
+@import "blocks/link.scss";
+@import "blocks/page-footer.scss";
 
