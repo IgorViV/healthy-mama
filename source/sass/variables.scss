@@ -12,11 +12,25 @@ $text-color:                  #2B2B2B;
 $text-color--muted:           #BFBFBF;
 
 // FONT:
+$font-size:                   16px;
+$font-size--h1:               40px;
+$font-size--h2:               32px;
+$font-size--h3:               24px;
+$font-size--h4:               18px;
+$font-size--h5:               16px;
+$font-size--h5:               16px;
+$font-size--small:            0.75em;
 
+$line-height:                 1.5;
+
+$font-family:                 "Lato", "Arial", sans-serif;
 
 // @MEDIA
-$screen-xs:                     0;
-$screen-sm:                     480px;
-$screen-md:                     768px;
-$screen-lg:                     992px;
-$screen-xl:                     1200px;
+$screen-xs:                   0;
+$screen-sm:                   480px;
+$screen-md:                   768px;
+$screen-lg:                   992px;
+$screen-xl:                   1200px;
+
+// OTHER
+$z-index-modal:               100;

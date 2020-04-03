@@ -1,5 +1,35 @@
 .page-header {
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  padding-top: 41px;
+  background-color: transparent;
 }
 
+.page-header__wrapper {
+  display: flex;
+  align-items: baseline;
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
+.page-header__wrapper-sandwich {
+  display: flex;
+  width: 128px;
+}
+
+.page-header__sandwich-button {
+  display: none;
+}
+
+.page-header__navigation {
+  width: 594px;
+  margin-left: 204px;
+}
+
+.page-header__menu {
+  display: flex;
+  justify-content: space-between;
+}
