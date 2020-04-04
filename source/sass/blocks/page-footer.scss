@@ -1,3 +1,43 @@
 .page-footer {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 71px;
   background-color: #27AE60;
+}
+
+.page-footer__wrapper {
+  width: 614px;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.page-footer__menu {
+  display: flex;
+  margin-bottom: 40px;
+
+  .menu__link {
+    color: #ffffff;
+  }
+}
+
+.page-footer__politics-list {
+  display: flex;
+}
+
+.page-footer__politics-item {
+  margin-right: 38px;
+}
+
+.page-footer__politics-link {
+  font-size: 12px;
+  line-height: 118%;
+  font-weight: 400;
+  color: #ffffff;
 }

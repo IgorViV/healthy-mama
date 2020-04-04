@@ -1,0 +1,49 @@
+.order-form {
+  width: 1085px;
+  margin: 0 auto;
+}
+
+.order-form__title {
+  margin-bottom: 22px;
+  text-align: center;
+  font-size: 41px;
+  line-height: 118%;
+  font-weight: 700;
+  color: #27AE60;
+}
+
+.order-form__text {
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.order-form__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-form__group {
+  width: 403px;
+  margin-right: 17px;
+
+  input {
+    width: 100%;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border: none;
+    background-color: #E8F7EE;
+    border-radius: 65px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #B2DAC2;
+    }
+
+    // temp for grid
+    min-height: 57px;
+  }
+}
