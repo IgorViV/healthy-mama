@@ -1,22 +1,132 @@
 .radio-slider {
   position: relative;
-  padding-top: 181px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 1008px;
 
-// temp for grid
-  height: 724px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 185px;
+    z-index: 2;
+    width: 502px;
+    height: 502px;
+    background-image: url(../../img/bg-circle.png), url(../../img/bg-fill-circle.png);
+    background-size: cover, 420px 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
 }
 
 .radio-slider__item {
+  width: 280px;
+  margin-bottom: 121px;
 
+  &--nursing {
+    width: 211px;
+    margin-bottom: 130px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    height: 50px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #BFBFBF;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      z-index: 11;
+      width: 29px;
+      height: 29px;
+      background-image: url(../../img/icons/icon-rounds.svg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: translate(50%, -50%);
+      opacity: 0.5;
+    }
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    right: 61px;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+
+  label:hover,
+  input:focus + label,
+  input:checked + label {
+    font-size: 18px;
+    color: #2B2B2B;
+
+    &::after {
+      width: 50px;
+      height: 50px;
+      opacity: 1;
+    }
+  }
+
+  input:checked ~ .radio-slider__wrapper-image {
+    display: block;
+  }
 }
 
 .radio-slider__wrapper-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: none;
+  width: 652px;
+  transform: translate(-50%, -50%);
 
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-// temp for grid
-.radio-slider__wrapper-image {
-    display: none;
+.radio-slider__item--pregnant {
+
+  .radio-slider__wrapper-image {
+    width: 1164px;
+    transform: translate(-32%, -38%);
+  }
+}
+
+.radio-slider__item--nursing {
+
+  .radio-slider__wrapper-image {
+    width: 449px;
+    transform: translate(-30%, -50%);
+  }
+}
+
+.radio-slider__item--medicament {
+
+  .radio-slider__wrapper-image {
+    width: 470px;
+    transform: translate(-20%, -50%);
+  }
 }
 
 
