@@ -10,13 +10,11 @@
   font-size: 14px;
   line-height: 1.4;
   font-weight: 700;
-
 }
 
-.menu__item--current {
-
-  .menu__link {
-    color: #27AE60;
-    border-bottom: 1px solid #F3F3F3;
-  }
+.menu__link:hover,
+.menu__link:focus {
+  color: #27AE60;
+  border-bottom: 1px solid #F3F3F3;
+  outline: none;
 }
