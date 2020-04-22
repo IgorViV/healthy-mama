@@ -1,20 +1,19 @@
 .advantages {
-  background-image: url(../../img/bg-advantages.jpg);
-  background-size: cover;
-  background-position: top;
+  background-image: url(../../img/bg-advantages-tree.png), url(../../img/bg-advantage-girls.png), url(../../img/bg-advantages.jpg);
+  background-size: 540px auto, 1283px 1016px, cover;
+  background-position: left bottom -300px, left 91px center, top -250px center;
   background-repeat: no-repeat;
 }
 
 .advantages__wrapper-content {
   width: 1140px;
   margin: 0 auto;
-  padding-top: 317px;
-  padding-bottom: 382px;
+  padding-top: 251px;
+  padding-bottom: 179px;
   padding-left: 619px;
 }
 
 .advantages__title {
-  width: 511px;
   margin-bottom: 85px;
   font-size: 41px;
   line-height: 118%;
@@ -25,6 +24,7 @@
 .advantages__item {
   position: relative;
   margin-bottom: 37px;
+  padding-left: 81px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -34,14 +34,42 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -81px;
+    left: 0;
     z-index: 10;
     width: 60px;
     height: 60px;
     background-color: #ffffff;
     border-radius: 50%;
-    box-shadow: 0px 0px 25px #eeeeee;
+    box-shadow: 0px 4px 35px rgba(25, 130, 189, 0.18);
   }
+}
+
+.advantages__item--ecological::before {
+  background-image: url(../../img/icons/icon-advantages-tree-leave.svg);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--balance::before {
+  background-image: url(../../img/icons/icon-advantages-check.svg);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--individuality::before {
+  background-image: url(../../img/icons/icon-advantages-back.svg);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--profit::before {
+  background-image: url(../../img/icons/icon-advantages-heart-cross.svg);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .advantages__item-title {

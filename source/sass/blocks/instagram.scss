@@ -11,7 +11,7 @@
 }
 
 .instagram__text {
-  margin-bottom: 77px;
+  margin: 0;
   font-size: 16px;
   line-height: 118%;
 }
@@ -22,4 +22,8 @@
 
 .instagram__collage {
   margin-bottom: 160px;
+  background-image: url(../../img/bg-instagram-left.png);
+  background-size: 974px auto;
+  background-position: left top 70px;
+  background-repeat: no-repeat;
 }
