@@ -13,8 +13,11 @@
 }
 
 .order-form__text {
+  margin: 0;
   margin-bottom: 65px;
   text-align: center;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .order-form__form {
@@ -42,8 +45,5 @@
       line-height: 1.4;
       color: #B2DAC2;
     }
-
-    // temp for grid
-    min-height: 57px;
   }
 }

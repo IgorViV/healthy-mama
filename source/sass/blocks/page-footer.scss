@@ -6,7 +6,7 @@
 }
 
 .page-footer__wrapper {
-  width: 614px;
+  width: 676px;
   margin: 0 auto;
 }
 
@@ -15,16 +15,34 @@
   margin-bottom: 40px;
   font-size: 18px;
   line-height: 140%;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .page-footer__menu {
   display: flex;
+  justify-content: start;
   margin-bottom: 40px;
+
+  .menu__item {
+    margin-right: 110px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
   .menu__link {
     color: #ffffff;
   }
+
+  .menu__link:hover,
+  .menu__link:focus {
+    color: #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
+    outline: none;
+  }
+
 }
 
 .page-footer__politics-list {
@@ -40,4 +58,10 @@
   line-height: 118%;
   font-weight: 400;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: #2b2b2b;
+    outline: none;
+  }
 }
