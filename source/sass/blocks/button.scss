@@ -7,9 +7,8 @@
   line-height: 140%;
   font-weight: 700;
   color: #ffffff;
-  background-color: #C4C4C4;
   background-color: transparent;
-  border: 1px solid rgba($color: #1982BD, $alpha: 0.11);
+  border: 1px solid rgba(25, 130, 189, 0.11);
   border-radius: 65px;
 
   span {
@@ -36,5 +35,16 @@
       border-radius: 50%;
       transform: translateY(-50%);
     }
+  }
+}
+
+.button:hover,
+.button:focus {
+  padding: 0;
+  border: 6px solid #27AE60;  
+
+  span {
+    color: #27AE60;
+    background-color: transparent;
   }
 }
